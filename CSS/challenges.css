@@ -1,0 +1,500 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: linear-gradient(90deg, #1D2671  , #C33764  );
+}
+.Challenges-website{
+    display: flex;
+}
+/*start bar*/
+.Challenges-website .bar{
+    width: 140px;
+    padding: 0 67.5px;
+}
+.Challenges-website .bar .repated-line-circle{
+    width: 5px;
+    height: 700px;
+}
+.Challenges-website .bar .line-circle{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.Challenges-website .bar .line-circle .upper-line{
+    width: 100%;
+    height: 40%;
+    background-color: rgba(211, 211, 211, 0.6);
+}
+.Challenges-website .bar .line-circle .circle{
+    font-family: 'VT323', monospace;
+    width: 65px;
+    height: 65px;
+    background-image: linear-gradient(80deg, #662D8C , #ED1E79);
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    transition: 0.3s;   
+    animation: gradient-animation 5s infinite alternate;
+    border: 5px solid rgba(211, 211, 211, 0.6);
+}
+.gradient-div {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right, #662D8C, #ED1E79);
+    animation: rotation-animation 5s infinite;
+}
+
+@keyframes rotation-animation {
+    
+}
+
+.Challenges-website .bar:hover .circle{
+    width: 110px;
+    height: 110px;
+    border-radius: 40%;
+    
+}
+.Challenges-website .bar:hover .circle + p{
+    font-size: 70px;
+    color: white
+}
+.Challenges-website .bar .line-circle .circle p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: rgba(211, 211, 211, 0.6);;
+}
+.line-circle .circle p a{
+    text-decoration: none;
+}
+.Challenges-website .bar .line-circle .lower-line{
+    width: 5px;
+    height: 40%;
+    background-color: rgba(211, 211, 211, 0.6);
+}
+/*end bar*/
+/* start challenges*/
+.Challenges-website .challenges{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    background-color: transparent;
+    flex-direction: column;
+}
+.ch_{
+    height: 700px;
+    padding-top: 50px;
+    position: relative;
+}
+.ch_ h1{
+    font-family: 'VT323', monospace;
+    text-align: center;
+    font-size: 50px;
+    color: #a37a96;
+    transition: 0.3s;
+    position: absolute;
+    top:0;
+    right: 50%;
+    transform: translateX(50%);
+}
+.ch_ h1:hover{
+    color: #beb4bb;
+}
+.container{
+    background-color: rgba(211, 211, 211, 0.4);
+    width: 800px;
+    height: 500px;
+    margin: 50px auto;
+    border-radius: 25px; 
+    box-shadow: rgb(115 43 138 / 50%) 0px 0px 20px 0px, 
+    rgb(227 31 122 / 50%) 0px 0px 20px 0px;
+     /* 	H-Shadow V-Shadow Blur Spread Color-Inset  */
+    border-width: 0;
+    transition: 0.3s;
+    position: relative;
+}
+.ch_:hover .container{
+    width: 850px;
+    height: 550px;
+    background-color: rgba(211, 211, 211, 0.6);
+    box-shadow: rgb(115 43 138 / 50%) 30px 21px 20px 0px, 
+    rgb(227 31 122 / 50%) -30px -21px 20px 0px;
+}
+.ch_:hover h1{
+    font-size: 60px;
+    top: -15px;
+    color: rgba(211, 211, 211, 0.7);
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* challenge 1  styles */
+.container_1{
+    width: 400px;
+    height: 400px;
+    background-color: hsl(0deg 0% 93.33%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgb(91 90 92 / 50%) 0px 0px 20px 9px;
+}
+.container_1 .adjust-container_1_1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+.container_1 .adjust-container_1_1 .container_1_1{
+    width: 300px;
+    background-color: hsl(0deg 0% 100%);
+    position: absolute;
+    height: 221px;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: rgba(138, 138, 138, 0.2) 0px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_1 .adjust-container_1_1 .container_1_1::before{
+    content: url(../images/person-blue-shirt.png);
+    position: absolute;
+    top: -50%;
+    left: 30%;  
+}
+.container_1 .adjust-container_1_1 .container_1_1::after{
+    content: 'A+';
+    letter-spacing: 0px;
+    position: absolute;
+    background-color: hsl(213.07deg 51.84% 48.04%);
+    display: flex;
+    color:white;
+    width: 30px;
+    height: 27px;
+    align-items: center;
+    justify-content: center;
+    bottom: -7%;
+    left: 85%;
+    border-radius: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.container_1 .adjust-container_1_1 .container_1_1 .title{
+    padding-top: 25px;
+    padding-bottom: 20;
+    text-align: center;
+    width: 90%;
+    border-bottom: 2px solid hsl(0deg 0% 96.47%);
+}
+.container_1 .adjust-container_1_1 .container_1_1 .container_1_2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+.container_1 .adjust-container_1_1 .container_1_1 .container_1_2_3{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(0deg 0% 96.47%);
+    padding: 6px;
+    margin: 3px;
+    border-radius: 2px;
+}
+.container_1 p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(98, 98, 98);
+    letter-spacing: -1px;
+    font-size: 14px;
+}
+.container_1 .title p{
+    padding-top: 7px;
+    padding-bottom:10px;
+    color: rgb(158, 158, 158);
+    letter-spacing: 0px;
+}
+.container_1 .title h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: -0.5px;
+    color: hsl(213.07deg 51.84% 48.04%);
+    font-size: 30px;
+}
+/* ----------------------------------------------------------------------------------------- */
+/* challenge 2  */
+.container_2{
+    width: 400px;
+    height: 400px;
+    background-color: hsla(0, 0%, 50%, 0.482);
+    border-radius: 15px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.container_2 .box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 45%;
+    overflow: hidden;
+}
+.container_2 .box .image-ch_2{
+    width: 100%;
+}
+.container_2 .box .image-ch_2 img{
+    width: 100%;
+    transition: 0.3s;
+}
+.container_2 .box .text-box{
+    position: absolute;
+    bottom: -80px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.503);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    transition: 0.3s;
+}
+.container_2 .box:hover .image-ch_2 img{
+    transform: rotate(-5deg) scale(1.5);
+}
+.container_2 .box:hover .text-box{
+    bottom: 0;
+}
+/* --------------------------------------------------------------------------------------------- */
+/* challenge 3 */
+.container_3{
+    width: 400px;
+    height: 400px;
+    background-color: #333;
+    border-radius: 15px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.container_3 .load{
+    position: absolute;
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    top: 38%;
+    left: 50%;
+    transform: translate(-100%, -38%);
+}
+
+.container_3 .load div{
+    background-color: orchid;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation-name: up-and-down;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate ;
+}
+.container_3 .load .two{
+    animation-delay: 0.3s;
+}
+
+.container_3 .load .three{
+    animation-delay: 0.6s;
+}
+
+
+@keyframes up-and-down {
+    to{
+        opacity: 0.2;
+        transform: translateY(-20px);
+    }
+}
+/* ------------------------------------------------------------------------------------------- */
+/* start challenge 4 */
+.hard-header{
+    font-family: "Cairo", sans-serif;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: rgb(91 90 92 / 50%) 0px 0px 20px 3px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.hard-header .x--{
+    width: 100%;
+    height: 20px;
+    background-color: #333;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.hard-header .x-- ul{
+    display: flex;
+    align-items: center;
+}
+.hard-header .x-- ul li{
+    width: 14px;
+    height: 14px;
+    border: 1px solid none;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+.hard-header .x-- ul li:first-child{
+    background-color: red;
+}
+.hard-header .x-- ul li:nth-child(2){
+    background-color: yellow;
+}
+.hard-header .x-- ul li:last-child{
+    background-color: green;
+}
+.hard-header .header{
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgb(221, 221, 221) 0px 0px 10px;
+}
+.hard-header .header .main-nav{
+    display: flex;
+}
+.hard-header .header .main-nav li > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 14px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.hard-header .header .main-nav li > .active{
+    background-color: rgba(240, 240, 240, 0.791);
+    color: #f32121;
+}
+.hard-header .header .main-nav li  .active::before{
+    left: 0;
+}
+.hard-header .header .logo{
+    font-size: 20px;
+    color: #f32121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-weight: bold;
+}
+.hard-header .header .main-nav li > a::before{
+    content: "";
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    background-color: #f32121;
+    top: 0;
+    left: -100%;
+    transition: 0.3s;
+}
+.hard-header .header .main-nav > li:hover > a::before {
+    left: 0;
+}
+.hard-header .header .main-nav > li:hover  > a{
+    background-color: rgba(236, 236, 236, 0.819);
+    color: #f32121;
+}
+.hard-header .header .main-nav li .mega-menu{
+    position: absolute;
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    background-color: white;
+    left: 0%;
+    gap: 40px;
+    border-bottom: 5px solid #f32121;
+    opacity: 0;
+    top: 100%;
+    z-index: -1;
+    transition: 0.3s;
+}
+.hard-header .header .main-nav li .mega-menu .image img{
+    width: 250px;
+}
+.hard-header .header .main-nav > li:hover > a:last-of-type + .mega-menu {
+    top: 12.5%;
+    opacity: 1;
+    z-index: 100;
+}
+.hard-header .header .main-nav > li .mega-menu .links{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px; 
+    flex: 1;
+}
+.hard-header .header .main-nav > li .mega-menu .links li > a{
+    margin-top: 5px;
+}
+.hard-header .header .main-nav > li .mega-menu .links li{
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.hard-header .header .main-nav > li .mega-menu .links li::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: #f32121;
+    bottom: 0;
+    left: -100%;
+    transition: 0.3s;
+}
+.hard-header .header .main-nav > li .mega-menu .links li:hover::before{
+    left: 0;
+}
+.hard-header .header .main-nav > li .mega-menu .links li:hover{
+    background-color: rgba(222, 222, 222, 0.647);
+}
+
+.hard-header .header .main-nav > li .mega-menu .links li > a > i{
+    margin-right: 10px;
+    color: #f32121;
+}
+.hard-header .header .main-nav > li .mega-menu .links li > a{
+    color: #f32121;
+}
