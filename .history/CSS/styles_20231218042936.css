@@ -190,7 +190,7 @@ nav ul li a:hover {
     transition: 0.3s;
     width: min-content;
     margin: 30px auto ;
-    
+    overflow: visible;
 }
 .explore a{
     color: var(--secondery-color);
@@ -248,12 +248,12 @@ nav ul li a:hover {
 /* Styles for the container2 */
 .container2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 80%; /* Adjust the width as needed */
     margin-top: 20px; /* Add margin or adjust as required */
     flex: 1;
+    gap: 30px;
     flex-flow: wrap;
-    margin:20 auto 0;
 }
 
 .tododemo h1{
@@ -297,22 +297,14 @@ nav ul li a:hover {
 .kemo > img {
     width: 300px;
     height: auto;
-    text-align: right;
 } 
 
 .demoimage1 img {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 500px;
+    max-height: 500px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px -4px 20px 9px;
-    transition: 0.3s;
-    
+    position: relative;
     /* Add any other styles you require */
-}
-
-.demoimage1 img:hover{
-    max-width: 410px;
-    max-height: 410px;
-    transform: rotate(10deg);
 }

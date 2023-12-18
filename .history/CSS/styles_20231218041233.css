@@ -190,7 +190,7 @@ nav ul li a:hover {
     transition: 0.3s;
     width: min-content;
     margin: 30px auto ;
-    
+    overflow: visible;
 }
 .explore a{
     color: var(--secondery-color);
@@ -227,7 +227,7 @@ nav ul li a:hover {
 
 /* to do demo */
 .tododemo{
-    height: auto;
+    height: 100vh;
     background-color: var(--secondery-color);
     box-shadow: rgba(0, 0, 0, 0.3) 0px -4px 20px 9px;
     display: flex;
@@ -248,23 +248,11 @@ nav ul li a:hover {
 /* Styles for the container2 */
 .container2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 80%; /* Adjust the width as needed */
     margin-top: 20px; /* Add margin or adjust as required */
     flex: 1;
-    flex-flow: wrap;
-    margin:20 auto 0;
-}
-
-.tododemo h1{
-    color: white;
-    font-size: 50px;
-    font-weight: 900;
-    padding: 30px;
-}
-.tododemo p{
-    font-size: 20px;
-    color: white;
+    gap: 30px;
 }
 
 /* Styles for .omar and .kemo */
@@ -276,43 +264,27 @@ nav ul li a:hover {
     /* Add any other styles you require */
 }
 
-
+/* Styles for .demoimage1 */
 .demoimage1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px; 
-    height: 150px; 
-    margin-bottom: 10px; 
-    width: 200px;
-    height: 200px;
-    background-color: var(--fourth-color);
-    /* transform: rotate(90deg); */
-    border-radius: 40%;
-}
-
-
-/* Styles for images within .omar and .kemo */
-.omar > img,
-.kemo > img {
-    width: 300px;
-    height: auto;
-    text-align: right;
-} 
-
-.demoimage1 img {
-    max-width: 400px;
-    max-height: 400px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px -4px 20px 9px;
-    transition: 0.3s;
-    
+    width: 150px; /* Set the width as needed */
+    height: 150px; /* Set the height as needed */
+    margin-bottom: 10px; /* Adjust margin as required */
     /* Add any other styles you require */
 }
 
-.demoimage1 img:hover{
-    max-width: 410px;
-    max-height: 410px;
-    transform: rotate(10deg);
+/* Styles for images within .demoimage1 */
+.demoimage1 img {
+    max-width: 300px;
+    max-height: 300px;
+    /* Add any other styles you require */
 }
+
+/* Styles for images within .omar and .kemo */
+.omar img,
+.kemo img {
+    width: 367px;
+    height: auto;
+} 

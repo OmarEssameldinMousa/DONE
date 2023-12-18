@@ -190,7 +190,6 @@ nav ul li a:hover {
     transition: 0.3s;
     width: min-content;
     margin: 30px auto ;
-    
 }
 .explore a{
     color: var(--secondery-color);
@@ -202,15 +201,9 @@ nav ul li a:hover {
     border: #ff7f23 solid 2px;
     padding: 3px;
 }
-.exploreimg{
-    float: right;
-}
 .explore img{
-    position: relative;
-    width: 158px;
-    right: -145px;
-    bottom: 117px;
-    
+    position: absolute;
+
 }
 .landing .logoimage{
     position: relative;
@@ -227,92 +220,14 @@ nav ul li a:hover {
 
 /* to do demo */
 .tododemo{
-    height: auto;
+    height: 100vh;
     background-color: var(--secondery-color);
     box-shadow: rgba(0, 0, 0, 0.3) 0px -4px 20px 9px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .snippests{
     height: 100vh;
     background-color: var(--fourth-color);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 20px 9px
-}
-
-/* Services */
-
-/* Styles for the container2 */
-.container2 {
-    display: flex;
-    justify-content: space-between;
-    width: 80%; /* Adjust the width as needed */
-    margin-top: 20px; /* Add margin or adjust as required */
-    flex: 1;
-    flex-flow: wrap;
-    margin:20 auto 0;
-}
-
-.tododemo h1{
-    color: white;
-    font-size: 50px;
-    font-weight: 900;
-    padding: 30px;
-}
-.tododemo p{
-    font-size: 20px;
-    color: white;
-}
-
-/* Styles for .omar and .kemo */
-.omar,
-.kemo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Add any other styles you require */
-}
-
-
-.demoimage1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px; 
-    height: 150px; 
-    margin-bottom: 10px; 
-    width: 200px;
-    height: 200px;
-    background-color: var(--fourth-color);
-    /* transform: rotate(90deg); */
-    border-radius: 40%;
-}
-
-
-/* Styles for images within .omar and .kemo */
-.omar > img,
-.kemo > img {
-    width: 300px;
-    height: auto;
-    text-align: right;
-} 
-
-.demoimage1 img {
-    max-width: 400px;
-    max-height: 400px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px -4px 20px 9px;
-    transition: 0.3s;
-    
-    /* Add any other styles you require */
-}
-
-.demoimage1 img:hover{
-    max-width: 410px;
-    max-height: 410px;
-    transform: rotate(10deg);
 }

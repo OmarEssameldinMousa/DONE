@@ -297,7 +297,6 @@ nav ul li a:hover {
 .kemo > img {
     width: 300px;
     height: auto;
-    text-align: right;
 } 
 
 .demoimage1 img {
@@ -307,12 +306,10 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px -4px 20px 9px;
     transition: 0.3s;
-    
     /* Add any other styles you require */
 }
 
 .demoimage1 img:hover{
     max-width: 410px;
     max-height: 410px;
-    transform: rotate(10deg);
 }
