@@ -16,6 +16,10 @@ function createChallengesWebsite(NoteTitle,NoteText) {
     var upperLine = document.createElement('div');
     upperLine.className = 'upper-line';
 
+    var anchorTag = document.createElement('a');
+    anchorTag.id = 'tagname'
+    anchorTag.href = '';
+    anchorTag.target = '';
 
     var circle = document.createElement('div');
     circle.className = 'circle';
@@ -28,9 +32,10 @@ function createChallengesWebsite(NoteTitle,NoteText) {
 
     // Append elements to build the bar section
     circle.appendChild(icon);
+    anchorTag.appendChild(circle);
 
     lineCircle.appendChild(upperLine);
-    lineCircle.appendChild(circle);
+    lineCircle.appendChild(anchorTag);
     lineCircle.appendChild(lowerLine);
 
     repatedLineCircle.appendChild(lineCircle);
@@ -82,14 +87,18 @@ ButtonAddNote.addEventListener('click',function(){
 
 
 document.addEventListener('click',(e)=>{
-    if (e.target.classList.contains("fa-solid", "fa-trash")) {
-        // Find the closest ancestor with the class 'Challenges-website'
-        var challengesWebsite = e.target.closest('.Challenges-website');
-
-        // Check if the ancestor exists before trying to remove it
-        if (challengesWebsite) {
-            // challengesWebsite.parentNode.removeChild(challengesWebsite);
-            document.body.removeChild(challengesWebsite)
+    document.getElementById('tagname').addEventListener('click', function (event) {
+        event.preventDefault();
+        if (e.target.classList.contains("fa-solid", "fa-trash")) {
+            // Find the closest ancestor with the class 'Challenges-website'
+            var challengesWebsite = e.target.closest('.Challenges-website');
+    
+            // Check if the ancestor exists before trying to remove it
+            if (challengesWebsite) {
+                challengesWebsite.parentNode.removeChild(challengesWebsite);
+            }
         }
-    }
+        
+    });
+    
 })

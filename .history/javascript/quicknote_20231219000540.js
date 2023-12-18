@@ -88,8 +88,7 @@ document.addEventListener('click',(e)=>{
 
         // Check if the ancestor exists before trying to remove it
         if (challengesWebsite) {
-            // challengesWebsite.parentNode.removeChild(challengesWebsite);
-            document.body.removeChild(challengesWebsite)
+            challengesWebsite.parentNode.removeChild(challengesWebsite);
         }
     }
 })

@@ -84,12 +84,12 @@ ButtonAddNote.addEventListener('click',function(){
 document.addEventListener('click',(e)=>{
     if (e.target.classList.contains("fa-solid", "fa-trash")) {
         // Find the closest ancestor with the class 'Challenges-website'
+        e.target.parentNode.preventDefault();
         var challengesWebsite = e.target.closest('.Challenges-website');
 
         // Check if the ancestor exists before trying to remove it
         if (challengesWebsite) {
-            // challengesWebsite.parentNode.removeChild(challengesWebsite);
-            document.body.removeChild(challengesWebsite)
+            challengesWebsite.parentNode.removeChild(challengesWebsite);
         }
     }
 })

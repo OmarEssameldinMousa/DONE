@@ -1,4 +1,4 @@
-function createChallengesWebsite(NoteTitle,NoteText) {
+function createChallengesWebsite() {
     // Create the outer container
     var challengesWebsite = document.createElement('div');
     challengesWebsite.className = 'Challenges-website';
@@ -16,6 +16,9 @@ function createChallengesWebsite(NoteTitle,NoteText) {
     var upperLine = document.createElement('div');
     upperLine.className = 'upper-line';
 
+    var anchorTag = document.createElement('a');
+    anchorTag.href = '';
+    anchorTag.target = '_self';
 
     var circle = document.createElement('div');
     circle.className = 'circle';
@@ -28,9 +31,10 @@ function createChallengesWebsite(NoteTitle,NoteText) {
 
     // Append elements to build the bar section
     circle.appendChild(icon);
+    anchorTag.appendChild(circle);
 
     lineCircle.appendChild(upperLine);
-    lineCircle.appendChild(circle);
+    lineCircle.appendChild(anchorTag);
     lineCircle.appendChild(lowerLine);
 
     repatedLineCircle.appendChild(lineCircle);
@@ -48,11 +52,11 @@ function createChallengesWebsite(NoteTitle,NoteText) {
 
     var heading = document.createElement('h6');
     heading.className = 'custom-heading';
-    heading.innerText = '- ' + NoteTitle.value;
+    heading.innerText = '- Welcome to our World';
 
     var paragraph = document.createElement('p');
     paragraph.className = 'custom-paragraph';
-    paragraph.innerText = NoteText.value;
+    paragraph.innerText = 'Explore the extraordinary possibilities.';
 
     // Append elements to build the challenges section
     container1.appendChild(heading);
@@ -70,26 +74,3 @@ function createChallengesWebsite(NoteTitle,NoteText) {
 
 var NoteTitle = document.querySelector("#notetitle")
 var NoteText = document.querySelector("#notedata")
-var ButtonAddNote = document.querySelector("#buttonclicksend")
-
-ButtonAddNote.addEventListener('click',function(){
-    if(NoteText.value.trim().length !== 0 && NoteTitle.value.trim().length !== 0){
-        createChallengesWebsite(NoteTitle,NoteText)
-    }
-    NoteText.value = ""
-    NoteTitle.value = ""
-})
-
-
-document.addEventListener('click',(e)=>{
-    if (e.target.classList.contains("fa-solid", "fa-trash")) {
-        // Find the closest ancestor with the class 'Challenges-website'
-        var challengesWebsite = e.target.closest('.Challenges-website');
-
-        // Check if the ancestor exists before trying to remove it
-        if (challengesWebsite) {
-            // challengesWebsite.parentNode.removeChild(challengesWebsite);
-            document.body.removeChild(challengesWebsite)
-        }
-    }
-})
