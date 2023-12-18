@@ -144,9 +144,9 @@ body {
 }
 
 .container1{
-    background-color: rgba(235, 235, 235, 0.897);
+    background-color: rgba(235, 235, 235, 0.694);
     width: 80%;
-    min-height: 350px;
+    height: 350px;
     margin: 0px auto;
     border-radius: 25px; 
     border-width: 0;
@@ -155,14 +155,14 @@ body {
 }
 .ch_:hover .container1{
     width: calc(80% + 30px);
-    height: auto;
-    background-color: rgba(211, 211, 211, 0.85);
+    height: 360px;
+    background-color: rgba(211, 211, 211, 0.6);
 }
 
 
 .container1addnote{
     border-bottom: #ff7f23 solid 10px;
-    border-top: #6c757d solid 1px;
+    border-top: white solid 5px;
     margin: 50px auto;
     min-height: 300px;
     width: 80%;
@@ -221,8 +221,8 @@ img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     text-align: left;
+    text-transform: uppercase;
     padding: 10px;
-    font-size: large;
 }
 
 
@@ -232,6 +232,4 @@ img {
     text-align: justify;
     line-height: 1.6;
     margin-top: 10px;
-    margin-left: 10px;
-    
 }

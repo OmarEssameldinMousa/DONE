@@ -156,13 +156,13 @@ body {
 .ch_:hover .container1{
     width: calc(80% + 30px);
     height: auto;
-    background-color: rgba(211, 211, 211, 0.85);
+    background-color: rgba(211, 211, 211, 0.6);
 }
 
 
 .container1addnote{
     border-bottom: #ff7f23 solid 10px;
-    border-top: #6c757d solid 1px;
+    border-top: white solid 5px;
     margin: 50px auto;
     min-height: 300px;
     width: 80%;

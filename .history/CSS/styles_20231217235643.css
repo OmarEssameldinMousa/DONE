@@ -3,7 +3,6 @@
     --main-color: rgba(235, 235, 235, 0.6);
     --secondery-color: #ff7f23;
     --third-color:#333;
-    --fourth-color: #6c757d;
 }
 /* End Variables */
 /* Special Heading */
@@ -62,8 +61,10 @@ body{
             flex-direction: column;
             text-align: center;
         }
+        
+
     }
-    .navlist{
+    nav ul{
         display: none;
     }
     
@@ -113,7 +114,6 @@ nav ul {
 nav ul li {
     margin-right: 10px;
     font-weight: bold;
-    
 }
 nav ul li:not(:last-child) {
     border-right: solid 3px white;
@@ -122,7 +122,6 @@ nav ul li:not(:last-child) {
 nav ul li a {
     text-decoration: none;
     color: white;
-    transition: 0.3s;
 }
 nav ul li a:hover {
     color: var(--main-color); /* Change color on hover */
