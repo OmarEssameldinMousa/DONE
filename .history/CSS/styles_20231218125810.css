@@ -66,20 +66,7 @@ body{
     .navlist{
         display: none;
     }
-    .container2{
-        flex-direction: column;
-
-    }
-    .contact-section h1{
-        font-size: medium;
-    }
-    .snippests .kemointegration{
-        width: 200px;
-        height: 200px;
-    }
-    .explore2{
-        top: 300vh;
-    }
+    
     
 }
 /*small screens*/
@@ -266,8 +253,8 @@ nav ul li a:hover {
     width: 80%; /* Adjust the width as needed */
     margin-top: 20px; /* Add margin or adjust as required */
     flex: 1;
-    
-    margin:20px auto 0;
+    flex-flow: wrap;
+    margin:20 auto 0;
 }
 
 .tododemo h1{
@@ -443,32 +430,9 @@ footer img{
     transition: 0.3s;
     width: min-content;
     margin: 30px auto;
-    
+    border: #ff7f23 solid 2px;
     border-radius: 10px;
     position: absolute;
     z-index: 10;
     left: 50%;
-    top: 185vh;
-    transform: translateX(-50%);
-
-}
-
-.explore2 a{
-    color: white;
-    font-weight: 900;
-    font-size: 50px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-
-.explore2:hover{
-    background-color: white;
-    border-radius: 20px;
-    
-    cursor: pointer;
-}
-
-.explore2:hover a{
-    color: var(--secondery-color);
 }

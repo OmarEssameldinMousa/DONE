@@ -70,16 +70,7 @@ body{
         flex-direction: column;
 
     }
-    .contact-section h1{
-        font-size: medium;
-    }
-    .snippests .kemointegration{
-        width: 200px;
-        height: 200px;
-    }
-    .explore2{
-        top: 300vh;
-    }
+    
     
 }
 /*small screens*/
@@ -443,7 +434,7 @@ footer img{
     transition: 0.3s;
     width: min-content;
     margin: 30px auto;
-    
+    border: #ff7f23 solid 2px;
     border-radius: 10px;
     position: absolute;
     z-index: 10;
