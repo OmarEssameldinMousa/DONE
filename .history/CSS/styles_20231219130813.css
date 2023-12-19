@@ -63,7 +63,7 @@ body{
             text-align: center;
         }
     }
-    header nav .navlist{
+    .navlist{
         display: none;
     }
     .container2{
@@ -482,31 +482,6 @@ footer img{
     justify-content: space-between;
     align-items: center;
 }
-
-
-
-/* final touch */
-
-.nav-container {
+.togglelist{
     display: none;
-    background-color: #333; /* Set your background color */
-    padding: 10px; /* Adjust padding as needed */
-}
-
-.nav-container ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-container li {
-    display: block;
-    margin-bottom: 10px; /* Adjust margin as needed */
-}
-
-.nav-container a {
-    text-decoration: none;
-    color: #fff; /* Set your text color */
-    font-weight: bold;
-    font-size: 18px; /* Set your font size */
 }

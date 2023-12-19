@@ -63,7 +63,7 @@ body{
             text-align: center;
         }
     }
-    header nav .navlist{
+    .navlist{
         display: none;
     }
     .container2{

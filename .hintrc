@@ -12,6 +12,15 @@
       }
     ],
     "disown-opener": "off",
-    "button-type": "off"
+    "button-type": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "height: fit-content",
+          "width: fit-content"
+        ]
+      }
+    ]
   }
 }

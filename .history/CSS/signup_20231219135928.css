@@ -171,3 +171,17 @@ a:hover{
     font-size: 20px;
     font-weight: 800;
 }
+
+
+
+.image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
